@@ -25,6 +25,13 @@ img {
   height: auto;
 }
 
+/* OutLine */
+*:focus {
+  outline: 2px dotted #7296ec;
+  outline-offset: 1px;
+}
+
+
 /* Container */
 
 .container {
@@ -38,9 +45,6 @@ img {
 
 /* SITE-HEADER */
 
-.site-header {
-
-}
 .site-header-top {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -50,8 +54,7 @@ img {
   display: flex;
   align-items: center;
 }
-.container {
-}
+
 .site-header-logo {
   display: flex;
   padding: 8px 6px;
@@ -84,6 +87,25 @@ img {
 .currandy-rates-type {
   color: #2959ce;
 }
+
+/* SEARCH-FORM */
+.search-form {
+  margin-right: 25px;
+}
+
+
+.search-form-input {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+  padding-left: 40px;
+  border: 0;
+  border-radius: 60px;
+  font-size: 14px;
+  line-height: normal;
+}
+
+
 
 /* LANGUAGE-TOGGLER */
 .lang-toggle {
