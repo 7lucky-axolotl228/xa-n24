@@ -27,7 +27,7 @@ img {
 
 /* OutLine */
 *:focus {
-  outline: 2px dotted #7296ec;
+  outline: 3px dotted #7296ec;
   outline-offset: 1px;
 }
 
@@ -138,6 +138,7 @@ img {
 .button {
   display: inline-block;
   padding: 13px 20px;
+  border: 0;
   border-radius: 10px;
   font-size: 16px;
   line-height: normal;
@@ -147,17 +148,24 @@ img {
 
 }
 
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
 .button-primary {
   background-color: #7296ec;
   color: #fff;
 }
 
-.button-primary:hover {
-  opacity: 0.8;
-}
-
-.button-primary:active {
-  opacity: 0.6;
+.btn-orange {
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #f78b3b;
+  color: #fff;
 }
 
 /* SITENAV */
@@ -261,7 +269,6 @@ img {
 .article-card-text {
   margin-top: 0;
   margin-bottom: 15px;
-  color: #4a4b4c;
 }
 .article-card-img {
   display: block;
@@ -287,5 +294,26 @@ img {
   line-height: normal;
   color: #5e5f61;
 }
-.article-card-source {
+
+
+/* NOTIFICATION-CTA */
+
+.notification-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 70px 25px 25px;
+  margin: 60px 75px;
+  border-radius: 10px;
+  background-color: #ffd7ba;
+}
+.notification-cta-text {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #000;
+}
+.button {
+}
+.btn-orange {
 }
