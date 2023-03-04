@@ -526,6 +526,10 @@ img {
   object-fit: cover;
 }
 
+.sitebar-ad-img-tall {
+  height: 553px;
+}
+
 /* SITE-FOOTER */
 .site-footer {
   padding-top: 40px;
