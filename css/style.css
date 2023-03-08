@@ -104,6 +104,10 @@ img {
   border-radius: 60px;
   font-size: 14px;
   line-height: normal;
+  background-image: url("../img/search-icon\ .svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 15px center;
 }
 
 
@@ -178,11 +182,14 @@ img {
 .sitenav {
   padding-top: 12px;
   padding-bottom: 12px;
-  margin-bottom: 40px;
   border-bottom: 1px solid #d1d1d1;
   font-size: 18px;
   font-weight: 500;
   line-height: normal;
+}
+
+.sitenav:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .sitenav-list {
@@ -311,7 +318,10 @@ img {
   padding: 25px 70px 25px 25px;
   margin: 60px 75px;
   border-radius: 10px;
-  background-color: #ffd7ba;
+  background-image: url("../img/notification-bgi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .notification-cta-text {
   font-size: 20px;
@@ -647,4 +657,122 @@ img {
   width: 25px;
   height: 25px;
   object-fit: contain;
+}
+
+/* FORM */
+.form {
+}
+
+.form-fields {
+  margin-bottom: 20px;
+}
+
+.form-groups-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-groups-wrapper:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form-group:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form-groups-wrapper .form-group {
+  width: calc(50% - 5px);
+  margin-bottom: 0;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  padding: 18px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.form-field-textarea {
+  resize: vertical;
+  min-height: 180px;
+  max-height: 200px;
+}
+
+/* Contact-Page-Card-Info */
+
+.definitions-card {
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin: 0;
+  color: #000;
+  background-color: #f6f6f6;
+}
+
+.definitions-card-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.definitions-card-item:not(:last-child) {
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.definitions-card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23.7px;
+  margin-bottom: 7px;
+}
+
+.definitions-card-title-value {
+  font-size: 16.8px;
+  line-height: 19px;
+  margin: 0;
+}
+
+.value-links {
+  color: #7296ec;
+  text-decoration: none;
+}
+
+/* CONTACT-PAGE */
+.contact-page-content {
+  display: flex;
+}
+.contact-page-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+  color: #000;
+}
+.contact-page-form {
+  display: flex;
+  flex-direction: column;
+  width: 696px;
+}
+
+.contact-page-form-submit {
+  align-self: flex-end;
+}
+
+.contact-page-info {
+  width: 494px;
+  margin-left: 10px;
+}
+
+
+
+/* RETINA BGImage */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .notification-cta {
+    background-image: url("../img/notification-bgi@2x.jpg");
+  }
 }
