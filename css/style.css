@@ -1,3 +1,9 @@
+:root {
+  --text-color: #fff;
+  --brand-color: #7296ec;
+  --font-family-text: "Rubik", "Arial", sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,7 +19,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Rubik", "Arial", sans-serif;
+  font-family: var(--font-family-text);
   font-size: 16px;
   line-height: 22px;
   background-color: #fff;
@@ -27,7 +33,7 @@ img {
 
 /* OutLine */
 *:focus {
-  outline: 2px dashed #7296ec;
+  outline: 2px dashed var(--brand-color);
   outline-offset: 1px;
 }
 
@@ -61,7 +67,7 @@ img {
   padding: 8px 6px;
   margin-right: 35px;
   border-radius: 7px;
-  background-color: #fff;
+  background-color: var(--text-color);
 }
 
 .site-header-logo:hover {
@@ -134,7 +140,7 @@ img {
 
 
 .lang-toggle-link-active {
-  background-color: #fff;
+  background-color: var(--text-color);
   color: #000;
 }
 
@@ -166,15 +172,15 @@ img {
 }
 
 .button-primary {
-  background-color: #7296ec;
-  color: #fff;
+  background-color: var(--brand-color);
+  color: var(--text-color);
 }
 
 .btn-orange {
   padding-right: 30px;
   padding-left: 30px;
   background-color: #f78b3b;
-  color: #fff;
+  color: var(--text-color);
 }
 
 /* SITENAV */
@@ -217,7 +223,7 @@ img {
 }
 
 .sitenav-link:hover {
-  color: #7296ec;
+  color: var(--brand-color);
 }
 
 .sitenav-link:active {
@@ -272,7 +278,7 @@ img {
 }
 
 .article-card-link:hover {
-  color: #7296ec;
+  color: var(--brand-color);
 }
 
 .article-card-link:active {
@@ -396,7 +402,7 @@ img {
 }
 
 .global-article-card-link:hover {
-  color: #7296ec;
+  color: var(--brand-color);
 }
 
 .global-article-card-link:active {
@@ -510,7 +516,7 @@ img {
 }
 
 .sitebar-news-card-link:hover {
-  color: #7296ec;
+  color: var(--brand-color);
 }
 
 .sitebar-news-card-link:active {
@@ -544,12 +550,12 @@ img {
 .site-footer {
   padding-top: 40px;
   padding-bottom: 40px;
-  color: #fff;
-  background-color: #7297ef;
+  color: var(--text-color);
+  background-color: var(--brand-color);
 }
 
 .site-footer *:focus {
-  outline: 2px dashed #fff;
+  outline: 2px dashed var(--text-color);
 }
 
 .site-footer-logo-wrapper {
@@ -606,7 +612,7 @@ img {
 
 .site-footer-link {
   display: inline-block;
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -731,7 +737,7 @@ img {
 }
 
 .value-links {
-  color: #7296ec;
+  color: var(--brand-color);
   text-decoration: none;
 }
 
