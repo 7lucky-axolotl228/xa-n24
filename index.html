@@ -12,9 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-<!--   <link rel="stylesheet" href="css/style.css"> -->
-<!--   <link rel="stylesheet" href="css/normalize.css"> -->
-  <link rel="stylesheet" href="css/style.css.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+<!--   <link rel="stylesheet" href="css/style.css.min.css"> -->
 
 </head>
 <body>
@@ -232,7 +232,7 @@
           Хотите быть в курсе свежих новостей?
           <br> Включите уведомления!
         </div>
-        <button class="button btn-orange" type="button">Включить</button>
+        <button class="button btn-orange modal-opener" type="button">Включить</button>
       </section>
 
 
@@ -466,7 +466,17 @@
 
 
 
+  <section class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <p class="modal-text-1">Хотите быть в курсе свежих новостей?</p>
+        <p class="modal-text-2">Включите уведомления!</p>
+        <button class="modal-content-turn-on">Включить</button>
+        <img class="modal-content-back-icon" src="img/back-icon.svg" alt="" width="24" height="24">
+      </div>
+    </div>
+  </section>
 
-
+  <script src="js/main.js"></script>
 </body>
 </html>
