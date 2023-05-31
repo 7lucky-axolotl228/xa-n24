@@ -1,15 +1,16 @@
-const elModalOpener = document.querySelector('.modal-opener');
-const elDemoModal = document.querySelector('.modal');
+const elModalOpener = document.querySelector('.js-modal-opener');
+const elModal = document.querySelector('.modal');
 
 elModalOpener.addEventListener('click', function() {
-  elDemoModal.classList.add('modal-open');
+  elModal.classList.add('modal-open');
 });
 
-const elModalBack = document.querySelector('.modal-content-back-icon');
-const elModalContentText = document.querySelector('.modal-content-turn-on');
+const elModalBack = elModal.querySelector('.js-modal-close');
+const elModalContentButton = elModal.querySelector('.js-modal-content-open-button');
+
 elModalBack.addEventListener('click', function() {
-  elDemoModal.classList.remove('modal-open');
+  elModal.classList.remove('modal-open');
 });
-elModalContentText.addEventListener('click', function() {
-  elDemoModal.classList.remove('modal-open');
+elModalContentButton.addEventListener('click', function() {
+  elModal.classList.remove('modal-open');
 });

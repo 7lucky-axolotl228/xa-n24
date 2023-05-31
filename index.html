@@ -232,7 +232,7 @@
           Хотите быть в курсе свежих новостей?
           <br> Включите уведомления!
         </div>
-        <button class="button btn-orange modal-opener" type="button">Включить</button>
+        <button class="button btn-orange js-modal-opener" type="button">Включить</button>
       </section>
 
 
@@ -466,13 +466,13 @@
 
 
 
-  <section class="modal">
+  <section class="modal" id="notification-modal">
     <div class="modal-dialog">
       <div class="modal-content">
         <p class="modal-text-1">Хотите быть в курсе свежих новостей?</p>
         <p class="modal-text-2">Включите уведомления!</p>
-        <button class="modal-content-turn-on">Включить</button>
-        <img class="modal-content-back-icon" src="img/back-icon.svg" alt="" width="24" height="24">
+        <button class="modal-content-turn-on js-modal-content-open-button">Включить</button>
+        <img class="modal-content-back-icon js-modal-close" src="img/back-icon.svg" alt="modal close icon" width="24" height="24">
       </div>
     </div>
   </section>
